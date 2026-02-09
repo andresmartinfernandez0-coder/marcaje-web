@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcaje</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Marcaje</h1>
+        <div id="reloj">00:00:00</div>
+        <div id="fichaje-buttons">
+            <button id="entrada">Fichar Entrada</button>
+            <button id="salida">Fichar Salida</button>
+        </div>
+        <h2>Nombre del trabajador</h2>
+        <input type="text" id="nombreTrabajador" placeholder="Escribe tu nombre">
+        <button id="guardarNombre">Guardar nombre</button>
+
+        <h2>Calendario</h2>
+        <div id="calendario"></div>
+        <button id="leyendaBtn">Ver leyenda de colores</button>
+
+        <h2>Historial</h2>
+        <table id="historialTable">
+            <thead>
+                <tr><th>Fecha</th><th>Entrada</th><th>Salida</th><th>Horas</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="exportar">Exportar CSV</button>
+    </div>
+
+    <div id="leyendaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Significado de colores</h3>
+            <ul>
+                <li style="color:green">Jornada completa</li>
+                <li style="color:yellow">Jornada incompleta</li>
+                <li style="color:blue">Horas extra</li>
+                <li style="color:orange">Fichaje rectificado</li>
+                <li style="color:red">Fichaje eliminado</li>
+                <li style="color:purple">Fichaje con foto</li>
+                <li style="color:grey">Sin fichaje</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bottom-nav">
+        <button>Marcaje</button>
+        <button>Historial</button>
+        <button>Exportar</button>
+        <button>Ajustes</button>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
